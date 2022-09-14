@@ -1,12 +1,18 @@
 #include <unistd.h>
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - Print the word "Ray"
+ *
  * Return: On success 1.
  */
-
-
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	int i;
+	char p[] = "Ray";
+
+	for (i = 0; i < 3; i++)
+	{
+		_putchar(p[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
